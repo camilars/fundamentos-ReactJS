@@ -1,10 +1,10 @@
-import './styles.css';
+import { CardWrapper } from "./styles";
 
-export function Card({ name, time}) {
+export function Card({ name, time }) {
   return (
-    <div className='card'>
+    <CardWrapper bgColor="#27187e">
       <strong>{name}</strong>
       <small>{time}</small>
-    </div>
-  )
+    </CardWrapper>
+  );
 }
