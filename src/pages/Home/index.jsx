@@ -17,7 +17,7 @@ export function Home() {
         second: "2-digit",
       }),
     };
-    setStudents((prevState) => [...prevState, newStudent]);
+    setStudents((prevState) => [newStudent, ...prevState]);
   }
 
   useEffect(() => {
